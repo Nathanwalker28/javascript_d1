@@ -55,7 +55,7 @@ if ("blue" === "red") {
 } else {
     console.timeLog("False");
 }
- */
+ 
 
 function calculatrice(a, b, signe){
     if (signe === "+") {
@@ -74,3 +74,49 @@ function calculatrice(a, b, signe){
         return a - b;
     }
 }
+
+//switch
+function calculatrice(a, b, signe) {
+    switch (signe)
+    {
+    case "addition" :
+        return a + b;
+    case "soustraction" :
+        return a - b;
+    default:
+        break;
+    }
+  }
+
+
+//do while
+var i = 0
+do {
+    console.log(i);
+    i++;
+}
+while (i < 4) ;
+console.log("fin de boucle");
+*/
+
+//tableau (array)
+var cars = ["renault", "audi", "hyundai"];
+for (let pointer = 0; pointer < cars.length; pointer++) {
+    console.log(cars[pointer]);
+    console.log(pointer);
+}
+
+
+
+for (let pointer = cars.length - 1;  pointer >= 0; pointer--) {
+    console.log(cars[pointer]);
+}
+
+console.log(cars.join(', '));
+console.table(cars);
+console.log(cars.shift());
+cars.push("mazda");
+cars.pop();
+console.log(cars.pop());
+console.log(cars.includes("ilbt"));
+
