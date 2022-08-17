@@ -97,7 +97,7 @@ do {
 }
 while (i < 4) ;
 console.log("fin de boucle");
-*/
+
 
 //tableau (array)
 var cars = ["renault", "audi", "hyundai"];
@@ -120,3 +120,21 @@ cars.pop();
 console.log(cars.pop());
 console.log(cars.includes("ilbt"));
 
+
+
+*/
+
+
+var notes = [10, 12, 15, 20];
+
+function somme(tab) {
+    var somme = 0;
+    for (let i = 0; i < tab.length; i++) {
+        somme = somme + tab[i];
+    }
+    return somme;
+}
+
+console.log(somme(notes));
+
+// var moyenne = somme / notes.length
